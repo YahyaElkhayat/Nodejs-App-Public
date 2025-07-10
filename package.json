@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-app-public",
+  "version": "1.0.0",
+  "description": "Simple Node.js app with static files",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

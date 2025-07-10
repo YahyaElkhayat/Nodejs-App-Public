@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  background: linear-gradient(135deg, #1abc9c, #16a085); /* teal/green gradient */
   color: white;
   display: flex;
   height: 100vh;
@@ -32,7 +32,7 @@ p {
 .btn {
   padding: 12px 24px;
   background-color: #ffffff;
-  color: #4e54c8;
+  color: #16a085; /* darker teal */
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
@@ -40,5 +40,6 @@ p {
 }
 
 .btn:hover {
-  background-color: #e0e0e0;
+  background-color: #1abc9c; /* lighter teal on hover */
+  color: white;
 }

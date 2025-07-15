@@ -3,54 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to MyApp</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MyApp - Build Amazing Things</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <div class="logo">MyApp</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="cta-button">Get Started</div>
-        </nav>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="animated-bg"></div>
+
+    <nav>
+        <a href="#" class="logo">MyApp</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <button class="cta-button">Get Started</button>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
         
         <div class="hero-content">
-            <h1>Build Amazing Things <span>With Node.js</span></h1>
-            <p>Deploy your application with ease and scale to millions of users</p>
+            <h1>Build Amazing Things With Node.js</h1>
+            <p>Deploy your application with ease and scale to millions of users worldwide with our cutting-edge platform</p>
             <div class="button-group">
                 <a href="#" class="primary-btn">Deploy Now</a>
                 <a href="#" class="secondary-btn">Learn More</a>
             </div>
         </div>
-        
-        <div class="features">
-            <div class="feature-card">
-                <i class="fas fa-bolt"></i>
+
+        <div class="features" id="features">
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
                 <h3>Lightning Fast</h3>
-                <p>Built on V8 engine for maximum performance</p>
+                <p>Built on V8 engine for maximum performance. Experience blazing fast execution speeds that will supercharge your applications.</p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-expand"></i>
-                <h3>Scalable</h3>
-                <p>Grow from prototype to production easily</p>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </div>
+                <h3>Infinitely Scalable</h3>
+                <p>Grow from prototype to production seamlessly. Handle millions of users without breaking a sweat with our robust infrastructure.</p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Secure</h3>
-                <p>Enterprise-grade security features</p>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Bank-Grade Security</h3>
+                <p>Enterprise-grade security features built-in. Your data and applications are protected with the highest industry standards.</p>
             </div>
         </div>
-    </div>
-    
+    </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-logo">MyApp</div>
@@ -58,9 +79,12 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
             </div>
-            <p>&copy; 2023 MyApp. All rights reserved.</p>
+            <p>&copy; 2024 MyApp. All rights reserved. Built with ❤️ for developers.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
